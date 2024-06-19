@@ -5,7 +5,7 @@
 ```py
 pip install Curvify
 ```
-### Usage
+# Usage
 ## Ellipse:
 ---
 ```py
