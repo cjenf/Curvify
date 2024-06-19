@@ -3,7 +3,7 @@
 ```py
 pip install Curvify
 ```
-## Example:
+## Ellipse:
 ---
 ```py
 import curve as cv
@@ -16,3 +16,7 @@ print(cv.center) # output: (3,3)
   <summary>Ellipse</summary>
   ### oops
 </details>
+## Parabola
+---
+```py
+```
