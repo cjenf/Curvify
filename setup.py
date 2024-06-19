@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name = "Curve",                                                                                                                              
+    name = "Curvify",                                                                                                                              
     version = "0.0.1",
     author = "Cheng",
     license='MIT license',
