@@ -1,2 +1,2 @@
 # 📐Curve
-### A package for Ellipse , Hyperbola , Parabola
+### A package for Ellipse , Hyperbola , Parabola.
