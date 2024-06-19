@@ -1,7 +1,7 @@
 # 📐Curve
 ### A  module using matplotlib for ploting Curves (Ellipse , Hyperbola , Parabola).
 
-## install package
+## 1.Install package
 ```py
 pip install Curvify
 ```
