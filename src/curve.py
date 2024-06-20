@@ -166,6 +166,8 @@ class Hyperbola:
             plt.plot(self._y1, self._x)
             plt.plot(self._y2, self._x)
             plt.show()
+        
+        plt.show()
 
     @property
     def center(self) -> tuple:
@@ -175,13 +177,19 @@ class Hyperbola:
     @property
     def vertex(self) -> tuple:
         """Returns the vertex of the hyperbola"""
-        return (self._h,self._k +self._b),(self._h, self._k - self._b) if self._direction=="left/right" else (self._h+self._b,self._k),(self._h-self._b,self._k)
-    
+        if self._direction=="left/right":
+            return (self._h,self._k +self._b),(self._h, self._k - self._b)    
+        else:
+            return (self._h+self._b,self._k),(self._h-self._b,self._k)
     @property
     def focus(self) -> tuple:
         """Returns the focus of the hyperbola"""
         focal_length = np.sqrt(self._a**2 + self._b**2)
-        return (self._h + focal_length, self._k ), (self._h-focal_length, self._k) if self._direction=="left/right" else (self._h, self._k + focal_length),(self._h, self._k - focal_length)
+        if self._direction=="left/right":
+            return (self._h + focal_length, self._k ), (self._h-focal_length, self._k)
+        else:
+            return (self._h, self._k + focal_length),(self._h, self._k - focal_length)
+    
     
     @property
     def transverse_axis_length(self) -> int:
