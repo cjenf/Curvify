@@ -31,3 +31,4 @@ h=curve.Hyperbola(np.linspace(0,10,100),1,2,3,4,"left")
 h.draw()
 print(h.vertex) # output: ((5, 4), (1, 4))
 ```
+![螢幕擷取畫面 2024-06-20 141706](https://github.com/Cjenf/Curvify/assets/105590093/9f19759c-d58a-4901-a823-49b1e9086438)
