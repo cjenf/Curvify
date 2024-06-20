@@ -22,3 +22,7 @@ p=curve.Parabola(np.linspace(-10, 10, 100), 1,1,1,1,"up",True)
 p.draw()
 print(p.axis_equation) # output: x-1=0
 ```
+![螢幕擷取畫面 2024-06-20 135000](https://github.com/Cjenf/Curvify/assets/105590093/70514161-6bc5-4df7-9e05-62d481c54a9b)
+#Hyperbola
+```py
+```
