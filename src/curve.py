@@ -7,8 +7,8 @@ A  module for ploting Curves
 
 """
 
-import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib.patches import Ellipse
 import numpy as np
 
 
@@ -55,7 +55,6 @@ class Parabola:
         elif self._direction in ["left/right","left" ,"right"]:
             self._y = np.sqrt(a*(x - h) / a)+k
             self._yf = -np.sqrt(a*(x - h) / a)+k
-            print(self._yf)
             if h and k==0:
                 self._c=0
             else:
@@ -103,6 +102,7 @@ class Parabola:
             return self._d
         elif self._direction in ["left/right","left" ,"right"]:
             return self._d
+        
     @property
     def axis_equation(self) -> str:
         """Returns the axis equation of the parabola"""
@@ -153,16 +153,16 @@ class Hyperbola:
         self._y1 = k + b * np.sqrt(1 + ((x - h) / a)**2)
         self._y2 = k - b * np.sqrt(1 + ((x - h) / a)**2)
         
-
     def draw(self) -> None:
         """
         Draws the hyperbola
         """
-        if self._direction=="up/down" | "up" | "down":
+        if self._direction in ["up/down","up","down"]:
             plt.plot(self._x, self._y1)
             plt.plot(self._x, self._y2)
             plt.show()
-        elif self._direction=="right/left" | "left" | "right":
+
+        elif self._direction in ["right/left","left","right"]:
             plt.plot(self._y1, self._x)
             plt.plot(self._y2, self._x)
             plt.show()
@@ -220,7 +220,7 @@ class ellipse:
         self._x_width = x_width
         self._y_height = y_height
 
-        ellipse = matplotlib.patches.Ellipse(
+        ellipse = Ellipse(
                 (
                 center_x, 
                 center_y
@@ -242,6 +242,7 @@ class ellipse:
         Draws the ellipse
         """
         plt.show()
+
     @property
     def center(self) -> tuple:
         """Returns the center of the ellipse"""
