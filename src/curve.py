@@ -1,9 +1,9 @@
 """
 A  module for ploting Curves
 
-.. module:: Curve
+.. module:: curve
 
-.. moduleauthor:: Cjenf
+.. moduleauthor:: cjenf
 
 """
 
@@ -14,7 +14,6 @@ import numpy as np
 
 class Parabola:
     """Represents a Parabolic 
-
 
     Args:
         x(np.ndarray): x-coordinates of the ndarray
@@ -119,8 +118,7 @@ class Parabola:
 class Hyperbola:
     """Represents a Hyperbola
     
-
-    Args:
+   Args:
         x(np.ndarray): x-coordinates of the ndarray
         a(int): a parameter of the hyperbola
         b(int): b parameter of the hyperbola
@@ -204,7 +202,6 @@ class Hyperbola:
 
 class ellipse:
     """Represents an ellipse
-
 
     Args:
         center_x(int): x-coordinate of the center
